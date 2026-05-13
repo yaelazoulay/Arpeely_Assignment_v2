@@ -1,6 +1,8 @@
 # Arpeely Assignment — Grammarly AI Humanizer LP
 
-Take-home: optimize the **quiz-format** landing page for **“free ai humanizer”** traffic and lift signups (see funnel in `task1_lp/optimization-and-strategy.md`).
+**For reviewers:** This repo is my take-home for the **AI Growth Specialist** role: conversion thinking on a **quiz-style** Grammarly Humanizer landing page, plus a working HTML prototype. Start with [`task1_lp/optimization-and-strategy.md`](task1_lp/optimization-and-strategy.md), then open [`task1_lp/optimized-humanizer.html`](task1_lp/optimized-humanizer.html) locally in a browser (download or clone, then double-click or `open` the file).
+
+**Brief:** Optimize the **quiz-format** LP for **“free ai humanizer”** traffic and lift signups, using the funnel in the strategy doc and the original PDF in this repo.
 
 ## Contents
 
