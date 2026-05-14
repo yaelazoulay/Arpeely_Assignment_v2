@@ -1,22 +1,30 @@
-# Arpeely Assignment — Grammarly AI Humanizer LP
+# Arpeely — AI Growth Specialist take-home
 
-**For reviewers:** This repo is my take-home for the **AI Growth Specialist** role: conversion thinking on a **quiz-style** Grammarly Humanizer landing page, plus a working HTML prototype. Start with [`task1_lp/optimization-and-strategy.md`](task1_lp/optimization-and-strategy.md), then open [`task1_lp/optimized-humanizer.html`](task1_lp/optimized-humanizer.html) locally in a browser (download or clone, then double-click or `open` the file).
+Work sample for the **AI Growth Specialist** track: **Task 1** (landing page optimization) and **Task 2** (campaign analytics & dashboarding). For reviewers: clone the repo and follow the paths below.
 
-**Brief:** Optimize the **quiz-format** LP for **“free ai humanizer”** traffic and lift signups, using the funnel in the strategy doc and the original PDF in this repo.
+## Deliverables at a glance
 
-## Contents
+| Deliverable | Location |
+|-------------|----------|
+| **Task 1** — Quiz LP redesign + written strategy | [`task1_lp/`](task1_lp/) |
+| **Task 2** — KPI framework + interactive dashboard | [`task2_analytics/`](task2_analytics/) |
 
-| Path | Description |
-|------|-------------|
-| [`AI_Growth_Specialist_Assignment.pdf`](AI_Growth_Specialist_Assignment.pdf) | Original assignment brief (PDF) |
-| [`task1_lp/baseline-humanizer.html`](task1_lp/baseline-humanizer.html) | Original 8-step baseline |
-| [`task1_lp/optimized-humanizer.html`](task1_lp/optimized-humanizer.html) | Improved 4-step LP + in-page **Optimization strategy** panel |
-| [`task1_lp/optimization-and-strategy.md`](task1_lp/optimization-and-strategy.md) | Written diagnosis and tactics |
+### Task 1 — Grammarly AI Humanizer LP
 
-## Preview
+- **Strategy & diagnosis:** [`task1_lp/optimization-and-strategy.md`](task1_lp/optimization-and-strategy.md)  
+- **Baseline (8-step) reference:** [`task1_lp/baseline-humanizer.html`](task1_lp/baseline-humanizer.html)  
+- **Optimized prototype (4-step + in-page strategy):** [`task1_lp/optimized-humanizer.html`](task1_lp/optimized-humanizer.html)  
 
 ```bash
 open task1_lp/optimized-humanizer.html
 ```
 
-Trademarks belong to their owners; metrics in the brief are illustrative for the assignment.
+### Task 2 — Performance analytics & dashboarding
+
+- **Monitoring plan (KPIs, definitions, panel rationale):** [`task2_analytics/docs/monitoring_plan.md`](task2_analytics/docs/monitoring_plan.md)  
+- **Dashboard:** Streamlit — see [`task2_analytics/README.md`](task2_analytics/README.md) for setup (`streamlit run app.py`).  
+- **Data:** [`task2_analytics/data/grammarly_campaign_data.xlsx`](task2_analytics/data/grammarly_campaign_data.xlsx)  
+
+---
+
+Trademarks belong to their owners; metrics and datasets are illustrative for the assignment context.
