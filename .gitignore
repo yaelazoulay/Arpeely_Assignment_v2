@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 *.log
 .cursor/
+
+# Brief — keep local only, not in public repo
+AI_Growth_Specialist_Assignment.pdf
