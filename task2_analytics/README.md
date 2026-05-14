@@ -3,7 +3,7 @@
 What the brief asks for | Where it is
 ---|---
 **Functional visualization report (live)** | **https://arpeelyassignmentv2-r5sbba7txppecvjrmxdcgt.streamlit.app/** (Streamlit Community Cloud) — or run [`app.py`](app.py) locally.  
-**Brief summary (1–2 paragraphs)** | Expand *Summary* in the Streamlit app, or [`docs/reviewer_summary.md`](docs/reviewer_summary.md).  
+**Brief summary (1–2 paragraphs)** | Expand *Summary* in the Streamlit app, or [`docs/metrics-rationale-summary.md`](docs/metrics-rationale-summary.md).  
 **Deeper monitoring plan** | [`docs/monitoring_plan.md`](docs/monitoring_plan.md)
 
 ---
@@ -21,7 +21,7 @@ Interactive dashboard and written monitoring plan for Grammarly multi-campaign e
 
 | Item | Location |
 |------|----------|
-| **Summary (1–2 paragraphs)** | [`docs/reviewer_summary.md`](docs/reviewer_summary.md) + in-app expander |
+| **Summary (1–2 paragraphs)** | [`docs/metrics-rationale-summary.md`](docs/metrics-rationale-summary.md) + in-app expander |
 | **Monitoring plan** (extended) | [`docs/monitoring_plan.md`](docs/monitoring_plan.md) |
 | **Interactive dashboard** | [`app.py`](app.py) |
 | **Dataset** | [`data/grammarly_campaign_data.xlsx`](data/grammarly_campaign_data.xlsx) |
