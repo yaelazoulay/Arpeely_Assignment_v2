@@ -91,11 +91,17 @@ def main() -> None:
     )
     fig1.update_layout(
         hovermode="x unified",
-        legend=dict(orientation="h", yanchor="bottom", y=1.05),
-        margin=dict(t=40, b=40),
-        height=420,
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.22,
+            x=0.5,
+            xanchor="center",
+        ),
+        margin=dict(t=56, b=88, l=48, r=32),
+        height=460,
         yaxis_title="Events",
-        title="Daily volume — clicks & installs",
+        title=dict(text="Daily volume — clicks & installs", x=0.5, xanchor="center"),
     )
 
     fig1b = go.Figure(
@@ -109,11 +115,11 @@ def main() -> None:
         ]
     )
     fig1b.update_layout(
-        height=260,
+        height=280,
         yaxis_title="Installs ÷ clicks (%)",
         showlegend=False,
-        margin=dict(t=12, b=40),
-        title="Daily CVR (event basis)",
+        margin=dict(t=48, b=48, l=48, r=32),
+        title=dict(text="Daily CVR (event basis)", x=0.5, xanchor="center"),
     )
 
     fig2 = go.Figure(
@@ -147,10 +153,17 @@ def main() -> None:
     )
     fig2b.update_layout(
         barmode="group",
-        height=360,
-        legend=dict(orientation="h", y=1.1),
+        height=400,
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.2,
+            x=0.5,
+            xanchor="center",
+        ),
+        margin=dict(t=52, b=80, l=48, r=32),
         yaxis_title="Count",
-        title="Volume — clicks vs attributed installs",
+        title=dict(text="Volume — clicks vs attributed installs", x=0.5, xanchor="center"),
     )
 
     fig3 = go.Figure(
