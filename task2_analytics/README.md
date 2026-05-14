@@ -2,32 +2,20 @@
 
 What the brief asks for | Where it is
 ---|---
-**Functional visualization report (live URL)** | **https://yaelazoulay.github.io/Arpeely_Assignment_v2/** (redirects to the dashboard) or direct **https://yaelazoulay.github.io/Arpeely_Assignment_v2/campaign-dashboard.html** — static Plotly report built from `build_static_report.py`, hosted via **GitHub Pages** (`/docs` on `main`).  
-**Same report — Streamlit (filters, CSV export)** | Optional Cloud deploy (section below) or local `streamlit run app.py`.
-**Brief summary (1–2 paragraphs)** | In the live HTML (expand *Why these metrics…*) or [`docs/reviewer_summary.md`](docs/reviewer_summary.md).
+**Functional visualization report (live)** | **https://arpeelyassignmentv2-r5sbba7txppecvjrmxdcgt.streamlit.app/** (Streamlit Community Cloud) — or run [`app.py`](app.py) locally.  
+**Brief summary (1–2 paragraphs)** | Expand *Summary* in the Streamlit app, or [`docs/reviewer_summary.md`](docs/reviewer_summary.md).  
 **Deeper monitoring plan** | [`docs/monitoring_plan.md`](docs/monitoring_plan.md)
 
 ---
 
 Interactive dashboard and written monitoring plan for Grammarly multi-campaign event data (`did_click_lp`, `did_install_grammarly`, `try_grammarly`).
 
-## Regenerate the public HTML (after data or copy changes)
+## Deploy / share Streamlit yourself
 
-From `task2_analytics/` with venv active:
-
-```bash
-python build_static_report.py
-```
-
-Commit `docs/campaign-dashboard.html` (and `docs/index.html` if needed) and push; GitHub Pages updates in ~1–2 minutes.
-
-## Get a shareable link (Streamlit Community Cloud — optional)
-
-1. Push this repo (or a fork) to GitHub.  
-2. Sign in at [streamlit.io/cloud](https://streamlit.io/cloud), **New app** → pick the repo, **main file path:** `task2_analytics/app.py` (or set app root to `task2_analytics` per Cloud UI).  
-3. Copy the `*.streamlit.app` URL — that is your **link to the functional visualization report**.
-
-If you do not deploy, reviewers can still run locally (section below).
+1. Push this repo to GitHub.  
+2. Sign in at [streamlit.io/cloud](https://streamlit.io/cloud), **New app** → pick the repo, **Main file path:** `task2_analytics/app.py` (or set the app root to `task2_analytics` if the UI offers it).  
+3. Set app visibility to **Public** so reviewers can open it without logging in.  
+4. Use the `*.streamlit.app` URL in your application email or README.
 
 ## Deliverable overview
 

@@ -21,8 +21,8 @@ open task1_lp/optimized-humanizer.html
 
 ### Task 2 — Performance analytics & dashboarding
 
-- **Live dashboard (public link):** **https://yaelazoulay.github.io/Arpeely_Assignment_v2/** — interactive static report (Task 2 visualization).  
-- **Streamlit** (CSV export, same metrics): see [`task2_analytics/README.md`](task2_analytics/README.md).  
+- **Live dashboard (Streamlit):** https://arpeelyassignmentv2-r5sbba7txppecvjrmxdcgt.streamlit.app/  
+- **Local run:** [`task2_analytics/README.md`](task2_analytics/README.md) (`streamlit run app.py`).  
 - **Summary + monitoring plan:** [`task2_analytics/docs/reviewer_summary.md`](task2_analytics/docs/reviewer_summary.md) · [`task2_analytics/docs/monitoring_plan.md`](task2_analytics/docs/monitoring_plan.md)  
 
 ---
