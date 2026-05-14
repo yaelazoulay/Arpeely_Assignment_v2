@@ -2,15 +2,26 @@
 
 What the brief asks for | Where it is
 ---|---
-**Functional visualization report** | Interactive **Streamlit** dashboard: [`app.py`](app.py). **Public link:** deploy once (see below) and paste your URL next to “Live app” in your email or PR. **Local:** `streamlit run app.py` → `http://localhost:8501`.
-**Brief summary (1–2 paragraphs): why these metrics & how they measure success** | [`docs/reviewer_summary.md`](docs/reviewer_summary.md) — *same text is inside the dashboard* (expandable section at the top: *Summary — why these metrics…*).
-**Deeper monitoring plan** (optional detail) | [`docs/monitoring_plan.md`](docs/monitoring_plan.md)
+**Functional visualization report (live URL)** | **https://yaelazoulay.github.io/Arpeely_Assignment_v2/** (redirects to the dashboard) or direct **https://yaelazoulay.github.io/Arpeely_Assignment_v2/campaign-dashboard.html** — static Plotly report built from `build_static_report.py`, hosted via **GitHub Pages** (`/docs` on `main`).  
+**Same report — Streamlit (filters, CSV export)** | Optional Cloud deploy (section below) or local `streamlit run app.py`.
+**Brief summary (1–2 paragraphs)** | In the live HTML (expand *Why these metrics…*) or [`docs/reviewer_summary.md`](docs/reviewer_summary.md).
+**Deeper monitoring plan** | [`docs/monitoring_plan.md`](docs/monitoring_plan.md)
 
 ---
 
 Interactive dashboard and written monitoring plan for Grammarly multi-campaign event data (`did_click_lp`, `did_install_grammarly`, `try_grammarly`).
 
-## Get a shareable link (Streamlit Community Cloud)
+## Regenerate the public HTML (after data or copy changes)
+
+From `task2_analytics/` with venv active:
+
+```bash
+python build_static_report.py
+```
+
+Commit `docs/campaign-dashboard.html` (and `docs/index.html` if needed) and push; GitHub Pages updates in ~1–2 minutes.
+
+## Get a shareable link (Streamlit Community Cloud — optional)
 
 1. Push this repo (or a fork) to GitHub.  
 2. Sign in at [streamlit.io/cloud](https://streamlit.io/cloud), **New app** → pick the repo, **main file path:** `task2_analytics/app.py` (or set app root to `task2_analytics` per Cloud UI).  
