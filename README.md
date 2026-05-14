@@ -21,9 +21,9 @@ open task1_lp/optimized-humanizer.html
 
 ### Task 2 — Performance analytics & dashboarding
 
-- **Monitoring plan (KPIs, definitions, panel rationale):** [`task2_analytics/docs/monitoring_plan.md`](task2_analytics/docs/monitoring_plan.md)  
-- **Dashboard:** Streamlit — see [`task2_analytics/README.md`](task2_analytics/README.md) for setup (`streamlit run app.py`).  
-- **Data:** [`task2_analytics/data/grammarly_campaign_data.xlsx`](task2_analytics/data/grammarly_campaign_data.xlsx)  
+- **Visualization report (interactive):** run `task2_analytics` with Streamlit — see [`task2_analytics/README.md`](task2_analytics/README.md). For a **public URL**, deploy that app to [Streamlit Community Cloud](https://streamlit.io/cloud) (steps in the same README).
+- **Short summary (why these metrics & how they show success):** [`task2_analytics/docs/reviewer_summary.md`](task2_analytics/docs/reviewer_summary.md) (also embedded in the Streamlit app under **Summary**).
+- **Extended monitoring plan:** [`task2_analytics/docs/monitoring_plan.md`](task2_analytics/docs/monitoring_plan.md)  
 
 ---
 

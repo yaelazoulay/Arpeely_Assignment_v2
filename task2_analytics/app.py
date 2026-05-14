@@ -37,6 +37,11 @@ st.caption(
     "Daily monitoring view: acquisition volume, LP comparison, post-install engagement, and funnel diagnostics."
 )
 
+_SUMMARY_PATH = _ROOT / "docs" / "reviewer_summary.md"
+if _SUMMARY_PATH.is_file():
+    with st.expander("Summary — why these metrics & what success means (brief for reviewers)", expanded=False):
+        st.markdown(_SUMMARY_PATH.read_text(encoding="utf-8"))
+
 
 @st.cache_data
 def _load():
@@ -65,6 +70,7 @@ with st.sidebar:
 - **LP attribution:** first-touch `lp_name` on each user’s earliest `did_click_lp` carries through to install counts (install rows have empty `extra`).
 - **CTR:** needs an impressions feed from ads; not in this extract—monitor **click volume** and CVR instead.
 - **Campaign table:** users who clicked *both* LPs appear in both click cohorts; attributed install sits under their first LP only.
+- **Written summary** (1–2 paragraphs): expander *Summary* at top of this page, or file `task2_analytics/docs/reviewer_summary.md` in the repo.
         """
     )
 

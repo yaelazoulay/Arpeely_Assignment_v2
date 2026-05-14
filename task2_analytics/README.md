@@ -1,15 +1,32 @@
 # Task 2 — Performance analytics & dashboarding
 
+What the brief asks for | Where it is
+---|---
+**Functional visualization report** | Interactive **Streamlit** dashboard: [`app.py`](app.py). **Public link:** deploy once (see below) and paste your URL next to “Live app” in your email or PR. **Local:** `streamlit run app.py` → `http://localhost:8501`.
+**Brief summary (1–2 paragraphs): why these metrics & how they measure success** | [`docs/reviewer_summary.md`](docs/reviewer_summary.md) — *same text is inside the dashboard* (expandable section at the top: *Summary — why these metrics…*).
+**Deeper monitoring plan** (optional detail) | [`docs/monitoring_plan.md`](docs/monitoring_plan.md)
+
+---
+
 Interactive dashboard and written monitoring plan for Grammarly multi-campaign event data (`did_click_lp`, `did_install_grammarly`, `try_grammarly`).
+
+## Get a shareable link (Streamlit Community Cloud)
+
+1. Push this repo (or a fork) to GitHub.  
+2. Sign in at [streamlit.io/cloud](https://streamlit.io/cloud), **New app** → pick the repo, **main file path:** `task2_analytics/app.py` (or set app root to `task2_analytics` per Cloud UI).  
+3. Copy the `*.streamlit.app` URL — that is your **link to the functional visualization report**.
+
+If you do not deploy, reviewers can still run locally (section below).
 
 ## Deliverable overview
 
 | Item | Location |
 |------|----------|
-| **Monitoring plan** (KPIs, rationale, panel mapping) | [`docs/monitoring_plan.md`](docs/monitoring_plan.md) |
-| **Interactive dashboard** (4 panels) | Streamlit app [`app.py`](app.py) |
-| **Dataset** (assignment extract) | [`data/grammarly_campaign_data.xlsx`](data/grammarly_campaign_data.xlsx) |
-| **Transforms / definitions** | [`analytics_core.py`](analytics_core.py) |
+| **Summary (1–2 paragraphs)** | [`docs/reviewer_summary.md`](docs/reviewer_summary.md) + in-app expander |
+| **Monitoring plan** (extended) | [`docs/monitoring_plan.md`](docs/monitoring_plan.md) |
+| **Interactive dashboard** | [`app.py`](app.py) |
+| **Dataset** | [`data/grammarly_campaign_data.xlsx`](data/grammarly_campaign_data.xlsx) |
+| **Transforms** | [`analytics_core.py`](analytics_core.py) |
 
 ## Run locally
 
